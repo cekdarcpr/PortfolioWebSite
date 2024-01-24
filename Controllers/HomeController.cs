@@ -29,7 +29,7 @@ namespace KisiselWeb.Controllers
             return View(values);
         }
 
-        public IActionResult Privacy()
+        public IActionResult Services()
         {
             var values = aboutManager.GetList();
 
