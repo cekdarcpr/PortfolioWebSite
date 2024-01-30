@@ -3,6 +3,7 @@ using KisiselWeb.DataLayer.EntityFramework;
 using KisiselWeb.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Web.Helpers;
 
 namespace KisiselWeb.Controllers
 {
@@ -48,6 +49,7 @@ namespace KisiselWeb.Controllers
             var values = contactManager.GetList();
             return View(values);
         }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
